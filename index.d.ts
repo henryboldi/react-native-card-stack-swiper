@@ -23,6 +23,7 @@ export interface CardStackProps {
   onSwipedTop?: (index: number) => void;
   onSwipedBottom?: (index: number) => void;
   onSwipe?: (x: number, y: number) => void;
+  children: React.ReactNode;
 }
 
 export default class CardStack extends React.Component<CardStackProps> {
@@ -44,6 +45,7 @@ export interface CardProps {
   onSwipedRight?: () => void;
   onSwipedTop?: () => void;
   onSwipedBottom?: () => void;
+  children: React.ReactNode;
 }
 
 export class Card extends React.Component<CardProps> {
